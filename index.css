@@ -1,0 +1,24 @@
+:root {
+  --primary: #D98326;
+  --secondary: #76B7CD;
+  --background: #ffffff;
+  --header-background: #F1ECE6;
+  --sub-header: #F3F3F3;
+  --font-color: #969696;
+}
+
+input[type="checkbox"]:checked + .circle-checkbox {
+  border-color: var(--primary);
+}
+
+input[type="checkbox"]:checked + .circle-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid var(--primary);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

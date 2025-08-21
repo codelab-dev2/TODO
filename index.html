@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="size-full m-[0] p-[0]">
+
+<header class="bg-[#F1ECE6] flex justify-center p-5">
+  <img alt="to-do-logo" src="assets/To-Do-Logo%201.png"/>
+</header>
+
+<div
+    class="task-type w-full flex bg-[#F3F3F3] text-[#969696] font-['Poppins', sans-serif] font-medium text-[32px]">
+  <div class="task-type-option task-personal w-[50%] text-center cursor-pointer">Personal</div>
+  <div class="task-type-option task-professional w-[50%] text-center cursor-pointer">Professional</div>
+</div>
+
+<div class="w-full flex justify-center flex-col items-center mt-[30px]">
+  <div class="add-todo w-[60%] relative font-light">
+    <input
+        class="todo-input-type w-full text-[28px] pt-[15px] pr-[90px] pb-[15px] pl-[20px] rounded-[50px] bg-[#F1ECE6] text-[#969696] font-light  focus:outline-none"
+        id="name"
+        name="name"
+        placeholder="What do you need to do?" type="text"/>
+    <button
+        class="add-button w-[100px] rounded-e-[50px] absolute right-0 top-0 bottom-0 bg-[#76B7CD] text-[30px] font-[600] text-center text-white border-[none] cursor-pointer">
+      ADD
+    </button>
+  </div>
+
+  <div class="todo-container w-[60%] mt-[30px] bg-[#F1ECE6] rounded-[40px]">
+    <div class="todo-list flex flex-col items-center">
+    </div>
+
+    <div
+        class="no-todo show bg-[#F1ECE6] mx-[15px] rounded-[40px] text-center px-[10px] py-[35px] text-[25px] font-normal">
+      No Todo item(s) available right now.
+    </div>
+
+    <div
+        class="clear-completed hidden mt-[8%] mr-[5%] mb-[2%] ml-[60%] flex justify-center items-center text-[#D98326] text-xl font-normal cursor-pointer">
+      <i class="material-icons icon-clear-completed text-[40px]">delete_forever</i>
+      <span>Clear completed</span>
+    </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+<!--<div class="todo-item">-->
+<!--  <input hidden id="no1" name="work" type="checkbox" checked>-->
+<!--  <label class="circle-checkbox active" for="no1"></label>-->
+<!--  <div class="todo-list-title active">Personal Work No. 1</div>-->
+<!--  <i class="material-icons delete-box">delete</i>-->
+<!--</div>-->
+
+<!--<div class="todo-item">-->
+<!--  <input hidden id="no2" name="work" type="checkbox">-->
+<!--  <label class="circle-checkbox" for="no2"></label>-->
+<!--  <div class="todo-list-title">Personal Work No. 2</div>-->
+<!--  <i class="material-icons delete-box">delete</i>-->
+<!--</div>-->
